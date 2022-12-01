@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+header {
+  background: #fffefe;
+  color: "black";
+  display: flex;
+  position: sticky;
+  top: -15px;
+  padding-top: 15px;
+  z-index: 5;
+  flex-direction: column;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  background: #fffefe;
+  bottom: 0px;
+  height: 70px;
+  min-width: 100%;
+  z-index: 3;
+  text-align: center;
+  border-top: 1px solid #777777;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.MuiPickerStaticWrapper-content>div>div:first-of-type,
+.css-xelq0e-muipickerStaticwrapper-content>div>div:first-of-type {
+  display: none;
+}
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: none;
+}
+
+.bookFooter {
+  background: #fffefe;
+  bottom: 10;
+  height: 80px;
+  width: 100%;
+  min-width: 100%;
+  z-index: 3;
+  text-align: center;
+  border-top: 1px solid #777777;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -60px;
+}
+
+main {
+  padding-bottom: 100px;
+}
