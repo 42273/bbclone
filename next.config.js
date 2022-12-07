@@ -1,13 +1,14 @@
-
-const { default: mongoose } = require('mongoose');
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+// const { default: mongoose } = require('mongoose');
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withBundleAnalyzer({
   reactStrictMode: true,
   swcMinify: true,
   images: {
     domains: ['maps.googleapis.com','firebasestorage.googleapis.com'],
-
   },
   rewrites: async () => {
     return [
@@ -22,7 +23,7 @@ const nextConfig = {
 
     ]
   }
-}
+})
 //외부 경로로 중계해줌
 // module.exports = {
 //   images: {
@@ -45,3 +46,6 @@ module.exports = async () => {
     // }}
   
 } 
+
+
+// module.exports = withBundleAnalyzer({})
